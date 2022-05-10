@@ -7,10 +7,45 @@
         <meta name="author"content="Gabriel">
         <meta name="description" content="#">
         <meta name="keywords" content="#">
+
+        <style>
+            body{
+                font-family: calibri, arial, sans-serif;
+                background-image: url(imagens/Back.jpg);
+                background-size: cover;
+            }
+            #fullcard{
+                background-color: white;
+                width:1620px;
+                height:800px;
+                margin:100px auto;
+                border-radius: 25px;
+            }
+            .logo{
+                
+            }
+            .formLogin{
+                top: 200px;
+                width:250px;
+            }
+            legend{
+                font-size: 18px;
+                text-transform: uppercase;
+            }
+            label{
+                line-height: 30px;
+            }
+            .btn{
+                margin-top: 15px;
+            }
+        </style>
     </head>
     
     <body>
-        <form action="#" method="post">
+        <div id="fullcard">
+            <section class="left">
+                <img class="logo" src="/Primeiro HTML/imagens/logoteste.png">
+         <form action="#" method="post" class="formLogin">
             <fieldset>
                 <legend>Login</legend>
                 <label for="user">Digite o usuário:</label>
@@ -18,9 +53,15 @@
 
                 <label for="pass">Digite a senha:</label>
                 <input type="password" name="pass" id="pass">
+                
+                <input type="submit" value="Logar" class="btn">
             </fieldset>
-            <input type="submit" value="Login">
-        </form>
+         </form>
+            </section>
+            <section class="left">
+                <img src="#">
+            </section>
+        </div>
     </body>
 
 </html>
