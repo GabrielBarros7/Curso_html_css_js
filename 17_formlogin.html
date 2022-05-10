@@ -11,22 +11,41 @@
         <style>
             body{
                 font-family: calibri, arial, sans-serif;
-                background-image: url(imagens/Back.jpg);
+                background-color: rgb(233, 233, 233);
                 background-size: cover;
+            }
+            header{
+                padding: 40px;
             }
             #fullcard{
                 background-color: white;
-                width:1620px;
-                height:800px;
-                margin:100px auto;
+                width:1142px;
+                height:761px;
+                margin:auto;
+                border-radius: 25px;
+            }
+            .left{
+                display: inline-block;
+                width:571px;
+                height:761px;
+                border-radius: 25px;
+                background-color: white;
+            }
+            .right{
+                float: right;
+                width:571px;
+                height:761px;
                 border-radius: 25px;
             }
             .logo{
-                
+                display: block;
+                margin:200px auto;
+                width:200px;
+                height:80px;
             }
             .formLogin{
-                top: 200px;
                 width:250px;
+                margin:-150px auto;
             }
             legend{
                 font-size: 18px;
@@ -38,11 +57,15 @@
             .btn{
                 margin-top: 15px;
             }
+            footer{
+                padding: 30px;
+            }
         </style>
     </head>
     
     <body>
-        <div id="fullcard">
+        <header></header>
+        <main><div id="fullcard">
             <section class="left">
                 <img class="logo" src="/Primeiro HTML/imagens/logoteste.png">
          <form action="#" method="post" class="formLogin">
@@ -58,10 +81,13 @@
             </fieldset>
          </form>
             </section>
-            <section class="left">
-                <img src="#">
+            <section class="right">
+                <img src="/Primeiro HTML/imagens/Capturar.PNG">
             </section>
-        </div>
+        </div></main>
+
+        <footer></footer>
+
     </body>
 
 </html>
