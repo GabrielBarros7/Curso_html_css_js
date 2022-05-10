@@ -1,0 +1,112 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #ccc;
+    margin: 0;
+}
+.hero{
+    background-image: url(../imagens/daniel.jpeg);
+    background-position: right center;
+    background-size: cover;
+    height: 500px;
+    border-top: 1px solid black;
+}
+.hero-content{
+    text-align: center;
+    color: white;
+    margin-top: 150px;
+}
+.hero-content h1{
+    text-transform: uppercase;
+    font-size: 46px;
+    text-shadow: 3px 3px 2px #333;
+}
+.hero nav ul{
+    text-align: right;
+    margin: 20px 50px 0 0;
+}
+.header{
+    list-style: none;
+    border: solid 1px whitesmoke;
+    display: inline-block;
+    margin-left: 10px; 
+}
+.header a{
+    background-color:rgba(0,0,0,0.3);
+    display: block;
+    padding: 15px;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 2px;
+}
+.header a:hover{
+    background-color:rgb(90, 90, 90) ;
+    display: block;
+    padding: 15px;
+}
+.header a:visited{
+    text-decoration: solid;
+    color: rgb(236, 236, 236);
+}
+main{
+    width: 80%;
+    margin: auto;
+}
+.content-section{
+    background-color: white;
+    padding: 10px;
+    margin-top: 15px;
+    overflow: auto;
+}
+.card{
+    width: 32%;
+    float: left;
+    box-sizing: border-box;
+  }
+.card-1, .card-2{
+    margin-right: 2%;
+}
+.card p{
+    background-color: #333;
+    color: azure;
+    margin: 0;
+    padding: 15px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 14px;
+}
+
+.card img{
+    width: 100%;
+    display: block;
+}
+article .artigo{
+    background-color: rgb(240, 240, 240);
+    padding: 0,5%;
+    margin-right: -5px;
+    margin-top: -25px;
+    margin-left: -5px;
+    border-bottom: inset 3px rgb(197, 196, 196);
+    text-align: left;
+}
+article .artigo h2{
+    position: relative;
+    top: 10px;
+    left: 5px; 
+}
+footer{
+    background-color: #333;
+    text-align: center;
+    color: white;
+    text-shadow: 3px 3px 2px rgb(90, 89, 89);
+    padding: 5px;
+    margin-top: 15px;
+}
+.subtitulo{
+    background-color: rgba(0,0,0,0.5);
+    border-bottom: inset 3px white;
+    padding: 15px;
+    display: inline-block;
+}
+ 
