@@ -2,17 +2,134 @@
 
 <html lang="pt-br">
     <head>
-        <title> pagina de exemplo estrutura basica</title>
+        <title> Lista de preço - serviços social media</title>
         <meta charset="utf-8">
         <meta name="author"content="Gabriel">
         <meta name="description" content="#">
         <meta name="keywords" content="#">
+
+        <style>
+            body{
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                width: 900px;
+                height: 100px;
+                margin: 80px auto;
+                text-align: center;    
+            }
+            table{
+                border: solid 2px rgb(0, 38, 82);
+            }
+            caption{
+                margin-bottom: 40px;
+                text-transform: uppercase;
+                background-color:rgb(16, 153, 245);
+                color:white;
+                width: 900px;
+                padding:10px;
+                box-sizing: border-box;
+            }
+            thead{
+                background-color: rgb(166, 195, 214);
+            }
+            th{
+                background-color: rgb(178, 218, 245);
+                padding-left: 10px;
+                padding-right: 10px;
+            }
+
+            tfoot{
+                background-color: rgb(178, 218, 245);
+                color: rgb(255, 255, 255);
+            }
+            tr{
+                height:40px;
+            }
+            .description{
+                text-align: left;
+                font-size:14px;
+            }
+            .price{
+                font-style: italic;
+            }
+        </style>
     </head>
     
     <body>
         <table>
-            <caption>Tabela de preços de cursos</caption>
-            
+            <caption><b>Lista de preço - serviços social media</b></caption>
+            <thead>
+                <tr>
+                    <th>Tipo de Serviço</th>
+                    <th>Quantidade</th>
+                    <th>Descrição do serviço</th>
+                    <th>Preço em dolár</th>
+                </tr>
+            </thead>
+            <tfoot>
+                <tr>
+                    <td colspan="4"><b>Instagram: @gabrielbapolinario  - Designer: Gabriel Barros Apolinário</b></td>
+                </tr>
+            </tfoot>
+            <tbody>
+                <tr>
+                    <td>Criação de logo</td>
+                    <td><b>1</b></td>
+                    <td class="description">Criação de logo baseado no pedido do cliente</td>
+                    <td class="price"><b>$50</b></td>
+                </tr>
+
+                <tr>
+                    <td>Perfil Instagram</td>
+                    <td><b>1</b></td>
+                    <td class="description">Criação de logo para perfil do instagram e ícones para destaques</td>
+                    <td class="price"><b>$80</b></td>
+                </tr>
+
+                <tr>
+                    <td>Perfil Facebook</td>
+                    <td><b>1</b></td>
+                    <td class="description">Criação de logo para perfil do Facebook e capa</td>
+                    <td class="price"><b>$70</b></td>
+                </tr>
+
+                <tr>
+                    <td>Publicações mensais</td>
+                    <td><b>1</b></td>
+                    <td class="description">Publicações mensais pré definidas pelo cliente</td>
+                    <td class="price"><b>$50</b></td>
+                </tr>
+
+                <tr>
+                    <td>Publicações mensais</td>
+                    <td><b>4</b></td>
+                    <td class="description">Quatro publicações mensais pré definidas pelo cliente</td>
+                    <td class="price"><b>$180</b></td>
+                </tr>
+
+                <tr>
+                    <td>Modelo de publicação</td>
+                    <td><b>1</b></td>
+                    <td class="description">Arquivo editavel do photoshop contendo um template pré definido para preencher com a escrita ou foto. </td>
+                    <td class="price"><b>$50</b></td>
+                </tr>
+
+                <tr>
+                    <td>Edição de vídeo</td>
+                    <td><b>1</b></td>
+                    <td class="description">Edições de vídeo para publicação em redes sociais ( as edições de vídeo 
+                        tem o preço variavel de acordo com o pedido do cliente e do tamanho 
+                        do material para a edição)</td>
+                    <td class="price"><b>Consultar</b></td>
+                </tr>
+
+                <tr>
+                    <td>Publicação Simples</td>
+                    <td><b>1</b></td>
+                    <td class="description">Uma publicação com somente a adição da logo e informações de 
+                        contato no rodapé ou cabeçalho</td>
+                    <td class="price"><b>$20</b></td>
+                </tr>
+            </tbody>
         </table>
     </body>
 
