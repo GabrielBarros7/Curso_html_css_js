@@ -91,6 +91,9 @@ li{
     padding-left: 1em;
 }
 
+.p-header{
+    color: rgb(179, 179, 179);
+}
 .hidden{
     width: 0;
     height: 0;
