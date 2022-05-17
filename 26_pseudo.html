@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+    <head>
+        <title> pagina de exemplo estrutura basica</title>
+        <meta charset="utf-8">
+        <meta name="author"content="Gabriel">
+        <meta name="description" content="#">
+        <meta name="keywords" content="#">
+
+        <style>
+            input[type="checkbox"]{
+                width: 100px;
+                height: 100px;
+            }
+
+            input[type="checkbox"]:checked{
+                width: 50px;
+                height: 50px;
+            }
+
+            button:disabled{
+                background-color: blue;
+                color: aliceblue;
+            }
+
+            p{
+                color: red;
+            }
+
+            p:empty::before{
+                content: "paragrafo vazio não dá, né!";
+            }
+
+            input[type="text"]:focus{
+                background-color:black;
+                color: white;
+            }
+
+            a:focus, a:hover{
+                background-color: red;
+            }
+
+
+        </style>
+    </head>
+    
+    <body>
+        
+        <label><input type="checkbox" value="sim">Aceito o contrato</label> 
+
+        <button>vai</button>
+        <button disabled>volta</button>
+
+        <p>paragrafo 1</p>
+        <p> </p>
+        <p></p>
+        <hr>
+
+        <input type="text">
+
+        <ul>
+            <li><a href="#">link falso</a></li>
+            <li><a href="#">link falso</a></li>
+            <li><a href="#">link falso</a></li>
+            <li><a href="#">link falso</a></li>
+
+        </ul>
+    </body>
+
+</html>
