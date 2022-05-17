@@ -37,11 +37,18 @@
                 color: white;
             }
 
-            a:focus, a:hover{
-                background-color: red;
+            input[type="text"]:read-only{
+                background-color:yellow;
+                color: black;
             }
 
+            input::placeholder{
+                color: red;
+            }
 
+            a:focus, a:hover, div:focus{
+                background-color: red;
+            }
         </style>
     </head>
     
@@ -58,14 +65,22 @@
         <hr>
 
         <input type="text">
+        <input type="text" value="valor inicial">
+        <input type="text" value="valor inicial" readonly>
+        <input type="text" value="valor inicial" disabled>
+        <input type="text" placeholder="valor do place holder">
+
 
         <ul>
             <li><a href="#">link falso</a></li>
             <li><a href="#">link falso</a></li>
             <li><a href="#">link falso</a></li>
             <li><a href="#">link falso</a></li>
-
         </ul>
+
+        <div tabindex="1">div 1</div>
+        <div tabindex="2">div 2</div>
+        <div tabindex="3">div 3</div>
     </body>
 
 </html>
