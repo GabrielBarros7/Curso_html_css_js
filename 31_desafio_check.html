@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+    <head>
+        <title> pagina de exemplo estrutura basica</title>
+        <meta charset="utf-8">
+        <meta name="author"content="Gabriel">
+        <meta name="description" content="#">
+        <meta name="keywords" content="#">
+
+        <style>
+            span{
+            display: inline-block;
+            border-radius: 10px;
+            background-color: #ddd;
+            width: 40px;
+            height:20px;
+            margin-right: 10px;
+            }
+
+            span::before{
+                content: '';
+                margin-left: 3px;
+                margin-top: 2.7px;
+                display: block;
+                background-color: rgb(255, 255, 255);
+                width: 14px;
+                height: 14px;
+                border-radius: 10px;
+                transition: transform .2s;
+            }
+
+            label{
+            height: 15px;
+            display: inline-block;
+            }
+
+            input[type="checkbox"]{
+            width: 1px;
+            height: 1px;
+            overflow: hidden;
+            visibility: hidden;
+            display: inline-block;
+            margin: 0;
+            
+            }
+
+            input[type="checkbox"]:checked + span::before{
+                transform: translateX(20px);
+                background-color: rgb(151, 255, 246);
+                
+            }
+        </style>
+    </head>
+    
+    <body>
+        <h1>Checkbox estilo Fancy</h1>
+
+        <label>
+            <input type="checkbox">
+            <span ></span>
+            Esporte
+        </label>
+
+        <label>
+            <input type="checkbox">
+            <span ></span>
+            Política
+        </label>
+
+        <label>
+            <input type="checkbox">
+            <span ></span>
+            Educação
+        </label>
+    </body>
+
+</html>
